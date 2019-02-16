@@ -15,3 +15,15 @@ possible):
 ## Installation
 To do. Requires both installation of Python packages into virtual environment
 AND downloading of C libraries into `./libs`.
+
+The only currently used library is `libcsv` which can be downloaded in `./libs`
+with
+
+    git clone git@github.com:rgamble/libcsv.git
+    cd libcsv
+    autoreconf -f -i
+    ./configure
+    make
+
+There is no need to install. I am also not sure if `autoreconf` is always
+necessary, but I needed for my system.
